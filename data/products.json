@@ -3,30 +3,35 @@
         "id" : 1,       
         "name" : "Nike KD 14",
         "price" : 34.199,
-        "img" : "nikekD14.png"
+        "img" : "nikekD14.png",
+        "description" :"Siempre listo para jugar, siempre listo para competir, el décimo calzado de Kevin Durant es tan versátil y eficaz como KD. El Flyknit localizado proporciona transpirabilidad y elasticidad, al tiempo que la amortiguación Nike Zoom Air retorna la energía del impacto al pie para brindar ultraeficacia."
     },
     {
         "id" : 2,
         "name" : "Nike PG Playstation",
         "price" : 25.199,
-        "img" : "nikePG.jpg"
+        "img" : "nikePG.jpg",
+        "description" :"Para Paul George, la PlayStation no es una videoconsola, sino un torbellino que le guía a otro campo de batalla con infinitos oponentes. Con una mentalidad distinta a la de la mayoría, su naturaleza competitiva le permite tomar el control en los momentos más importantes del partido, simulando movimientos que solo él puede hacer en la vida real"
     },
     {
         "id" : 3,
         "name" : "UA Charged Spawn 3",
         "price" : 28.999,
-        "img" : "UACharged.png"
+        "img" : "UACharged.png",
+        "description" :"Las Zapatillas Under Armour Charged Spawn 3 son ideales para sumar cada día más kilómetros a tu rutina. El diseño fresco cuenta con un tejido transpirable en la capellada con detalles en sintético para mejorar su durabilidad."
     },
     {
         "id" : 4,
         "name" : "Adidas Ozelia",
         "price" : 21.999,
-        "img" : "adidasOzelia1.png"
+        "img" : "adidasOzelia1.png",
+        "description" :"Inspiradas en los archivos de adidas, estas zapatillas llamativas lucen un diseño robusto que no pasa desapercibido. Además del estilo único, la amortiguación Adiprene garantiza la comodidad para los días de mayor intensidad."
     },
     {
         "id" : 5,       
         "name" : "Nike SB Blazer",
         "price" : 19.899,
-        "img" : "nikeSbBlazer.png"
+        "img" : "nikeSbBlazer.png",
+        "description" :"NACIDO EN LA CANCHA. RENOVADO PARA LA CALLE.Con su look minimalista y sus materiales clásicos, el blazer Nike SB Court trae una vibra deportiva original de la cancha a la calle. Una zona de ollie reforzada y una suela flexible y adherente te ayudan a resistir tus sesiones de skate más intensas."
     }
 ]
