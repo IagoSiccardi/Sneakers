@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(247, 243, 243) ;
+}
+
+#logo {
+    font-family: 'Viga';
+    transition: all .5s;
+ }
+
+ #logo:hover {
+    transform: scale(1.1);
+}
+
+
+a{
+    text-decoration: none;
+    
+}
+
+body::-webkit-scrollbar {
+    background-color: rgb(255, 255, 255);
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    background-color: var(--Primario)
+}
+

@@ -1,0 +1,21 @@
+header {
+    position: static;
+    background-color: var(--Primario)
+ 
+}
+
+header .btn {
+    font-weight: 500;
+    transition: all .5s;
+}
+
+ 
+
+header .nav-item {
+    transition: all .5s;
+    font-weight: 500;
+}
+
+header .nav-item:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,11 @@
+footer .nav-item {
+    transition: .5s;
+}
+
+footer .nav-item:hover {
+    transform: scale(1.1);
+}
+
+footer .iconos a:hover {
+    transform: scale(1.2);
+}

@@ -1,0 +1,32 @@
+[
+    {   
+        "id" : 1,       
+        "name" : "Nike KD 14",
+        "price" : 34.199,
+        "img" : "nikekD14.png"
+    },
+    {
+        "id" : 2,
+        "name" : "Nike PG Playstation",
+        "price" : 25.199,
+        "img" : "nikePG.jpg"
+    },
+    {
+        "id" : 3,
+        "name" : "UA Charged Spawn 3",
+        "price" : 28.999,
+        "img" : "UACharged.png"
+    },
+    {
+        "id" : 4,
+        "name" : "Adidas Ozelia",
+        "price" : 21.999,
+        "img" : "adidasOzelia1.png"
+    },
+    {
+        "id" : 5,       
+        "name" : "Nike SB Blazer",
+        "price" : 19.899,
+        "img" : "nikeSbBlazer.png"
+    }
+]
