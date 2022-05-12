@@ -1,0 +1,38 @@
+@media (min-width : 576px) {
+    
+    .producto {
+        margin-top: 1.5rem ;
+    }
+
+    .producto .imagen-img {
+        transform: scale(.9);
+        transition: .5s;
+    }
+
+    .producto .imagen-img:hover {
+        transform: scale(1);
+    } 
+    
+}
+
+
+@media (min-width : 768px) {
+    
+    .producto {
+       
+        display: flex;
+    }
+
+    .container-imagen {
+        margin-bottom: 0 !important;
+    }
+    
+}
+
+@media (min-width : 992px) {
+    .producto {
+        padding: 60px;
+        
+    }
+    
+}

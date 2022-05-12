@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <%- include('./partials/head.ejs') %>
+
+<body>
+
+  <%- include('./partials/header.ejs') %> 
+
+  <main class=>
+    
+
+    <section class="container col-xs-10 flex-wrap justify-content-between border pt-3 producto" style="background-color: white">
+     
+        <div class="col-sm-12 mb-3 col-md-7 container-imagen">
+              <img src="/images/<%= product.img %>" class="card-img-top imagen-img " alt="...">
+        </div>
+
+        <div class="col-sm-12 col-md-5">
+          <h2 class="card-title text-black fs-1 w-100 mb-2"><%=product.name%> </h5>
+          <p class="card-text col-md-12 text-black fs-2 mb-2">$<%=product.price%> </p>
+          <p class="fs-5"><i class="fa-solid fa-credit-card px-1 fs-4 text-success"></i> En 12 cuotas de <span class="fw-bold">$<%= result %></span></p>
+          <form action="">
+            <select class="mb-3 p-1 w-100 text-center" name="talle" id="talle">
+              <option value="" hidden selected>Talles</option>
+              <option value="39">39</option>
+              <option value="40">40</option>
+              <option value="41">41</option>
+              <option value="42">42</option>
+          </select>
+          </form>
+        <div class="col-md-12">
+          <button class="btn btn-outline-success w-100 mb-2 carrito">Agregar al carrito</button>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="container col-12 mt-3 border " style="background-color: white">
+      <div class="description pt-3 pb-3">
+        <h4><%= product.name %> </h4>
+        <p><%= product.description %></p>
+      </div>
+
+    </section>
+
+    <section class="container mx-auto my-auto row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-between">
+
+      <h2 class="w-100 text-black text-center mt-5 p-2 fs-3 ">Podria interesarte...</h2>
+    
+      <% for( let i = 0; i < 3; i++ ) { %>
+      
+        <div class="col">
+          <a class="text-black" href="/products/detail/<%= products[i].id %> ">
+            <div class="card">
+              <img src="/images/<%= products[i].img %> " class="card-img-top" alt="...">
+              <div class="card-body d-flex justify-content-between align-items-center flex-wrap">
+                <h5 class="card-title w-100"><%= products[i].name %> </h5>
+                <p class="card-text w-40 mb-0">$<%= products[i].price %> </p>
+                <a href="" class="w-40 cart"><i class="fa-solid fa-cart-shopping text-success p-2 bg-white border rounded-circle shadow bg-white rounded"></i></a>
+              </div>
+            </div>
+          </div>
+          </a>
+      <% } %>
+
+  </main>
+  <%- include('./partials/footer.ejs') %> 
+ 
+</body>
+</html>
