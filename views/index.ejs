@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 
-  <%- include('./partials/head.ejs') %>
+  <%- include('./partials/head.ejs',{
+    title: "Sneakers | Home"
+  }) %>
 
 <body>
 
@@ -41,7 +43,7 @@
 
     <section class="container-fluid mx-auto my-auto row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 ">
 
-      <h2 class="w-100 text-black text-center p-2 fs-1 ">Nuestros Sneakers </h2>
+      <h2 class="w-100 text-black text-center p-2 fs-1 ">Algunos de nuestros Sneakers!</h2>
     
       <% for( let i = 0; i < 3; i++ ) { %>
       

@@ -38,3 +38,10 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--Primario)
 }
 
+
+@media (min-width : 768px) {
+
+        .result {
+            height: 70vh;
+        }
+}

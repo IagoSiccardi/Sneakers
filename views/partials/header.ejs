@@ -11,10 +11,10 @@
               <a class="nav-link active " aria-current="page" href="/">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">Productos</a>
+              <a class="nav-link " href="/products">Productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">Perfil</a>
+              <a class="nav-link " href="/users/login">Perfil</a>
             </li>
             
           </ul>
@@ -22,8 +22,8 @@
           <div class="d-flex align-items-center">
 
 
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Buscar productos..." aria-label="Search">
+            <form action="/products/result" method="GET" class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Buscar productos..." aria-label="Search" autocomplete="off" name="keyword">
               <button class="btn btn-outline-dark " type="submit">Buscar</button>
             </form>
           </div>

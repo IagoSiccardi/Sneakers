@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
-const {detail} = require('../controllers/productsController')
+const {detail, products,search} = require('../controllers/productsController')
 
-/* GET home page. */
+
+router.get('/',products)
 router.get('/detail/:id',detail)
+router.get('/result',search)
 
 
 

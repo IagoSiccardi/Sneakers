@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <%- include('../partials/head.ejs',{
+    title: "Sneakers | Register"
+  }) %>
+
+<body>
+
+  <%- include('../partials/header.ejs') %> 
+
+  <main class="container d-flex justify-content-center align-items-center" style="height:70vh;">
+    <form style="width: 500px ;" class="">
+        <div id="" class="form-text w-100 text-center mb-5 text-black fs-2">Registrate!</div>
+
+        <div class="mb-3">
+          <label for="exampleInputText1" class="form-label text-black">Nombre de usuario</label>
+          <input type="text" class="form-control" id="exampleInputText1" aria-describedby="emailHelp">
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label text-black">Correo electronico</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label text-black">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputPassword2" class="form-label text-black">Repeti tu contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label text-black" for="exampleCheck1">Acepto los terminos y condiciones</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 text-center">Registrate</button>
+        
+      </form>
+
+
+  </main>
+  <%- include('../partials/footer.ejs') %> 
+ 
+</body>
+</html>
