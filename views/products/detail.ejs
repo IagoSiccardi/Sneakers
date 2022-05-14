@@ -31,7 +31,12 @@
               <option value="42">42</option>
           </select>
           </form>
-        <div class="col-md-12">
+        <div class="col-md-12 ">
+          <div class="d-flex flex-wrap justify-content-between mb-2">
+
+            <a href="/products/edit/<%= product.id %> " class="text-black btn btn-outline-warning edit-delete "><button class=" btn text-dark">Editar</button></a>
+            <a href="/products/delete/<%= product.id %> " class="text-black btn btn-outline-danger edit-delete "><button class=" btn text-dark">Eliminar</button></a>
+          </div>
           <button class="btn btn-outline-success w-100 mb-2 carrito">Agregar al carrito</button>
         </div>
         </div>

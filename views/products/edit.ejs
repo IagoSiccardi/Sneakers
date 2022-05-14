@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <%- include('../partials/head.ejs',{
+    title: "Sneakers | Editar"
+  }) %>
+
+<body>
+
+  <%- include('../partials/header.ejs') %> 
+
+
+    <main class="container d-flex justify-content-center align-items-center" >
+      <form style="width: 500px;" class="" method="post" action="/products/update/<%= product.id %>?_method=PUT ">
+          <div id="" class="form-text w-100 text-center mb-5 text-black fs-2">Editar producto : <%= product.name %> </div>
+  
+          <div class="mb-3">
+            <label for="name" class="form-label text-black">Nombre del producto:</label>
+            <input type="text" class="form-control" id="name" name="name" value="<%=product.name%>">
+          </div>
+  
+          <div class="mb-3">
+            <label for="price" class="form-label text-black">Precio del producto:</label>
+            <input type="text" class="form-control" id="price" name="price" value="<%=product.price%>">
+          </div>
+  
+          <div class="mb-3">
+            <label for="image" class="form-label text-black">Imagen del producto :</label>
+            <img src="/images/<%= product.img %>" class="col-12" alt="">
+            <input type="file" class="form-control" id="image" name="image">
+          </div>
+  
+          <div class="mb-3">
+            <label for="description" class="form-label text-black w-100">Descripcion :</label>
+            <textarea name="description" id="" cols="65" rows="5" class="form-control"><%=product.description%></textarea>
+          </div>
+  
+          <button type="submit" class="btn btn-primary w-100 text-center">Editar</button>
+          
+        </form>
+
+  </main>
+  <%- include('../partials/footer.ejs') %> 
+ 
+</body>
+</html>
