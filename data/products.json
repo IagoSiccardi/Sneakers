@@ -2,7 +2,7 @@
    {
       "id": 1,
       "name": "Nike KD 14",
-      "price": 35.199,
+      "price": 33.199,
       "img": "nikekD14.png",
       "description": "Siempre listo para jugar, siempre listo para competir, el décimo calzado de Kevin Durant es tan versátil y eficaz como KD. El Flyknit localizado proporciona transpirabilidad y elasticidad, al tiempo que la amortiguación Nike Zoom Air retorna la energía del impacto al pie para brindar ultraeficacia."
    },
@@ -30,8 +30,15 @@
    {
       "id": 5,
       "name": "Nike SB Blazer",
-      "price": 19.899,
+      "price": 21.899,
       "img": "nikeSbBlazer.png",
       "description": "NACIDO EN LA CANCHA. RENOVADO PARA LA CALLE.Con su look minimalista y sus materiales clásicos, el blazer Nike SB Court trae una vibra deportiva original de la cancha a la calle. Una zona de ollie reforzada y una suela flexible y adherente te ayudan a resistir tus sesiones de skate más intensas."
+   },
+   {
+      "id": 6,
+      "name": "Nike Dame",
+      "price": 20.999,
+      "img": "default-img.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
    }
 ]

@@ -15,7 +15,33 @@ module.exports = {
         })
     },
 
-    edit:(req,res) => {
+    create: (req,res) => {
+        res.render('./products/create')
+    },
+
+    store: (req,res) => {
+
+        const lastId = products[products.length - 1].id + 1 
+
+        const {name,price, description} = req.body
+
+        const newProduct = {
+            id: +lastId,
+            name: name.trim(),
+            price: +price,
+            img: 'default-img.png',
+            description: description.trim()
+            
+        }
+
+        products.push(newProduct)
+
+        fs.writeFileSync(path.resolve(__dirname, '..', 'data', 'products.json'),JSON.stringify(products,null,3),'utf-8')
+
+        res.redirect('/products') 
+    },
+
+    edit: (req,res) => {
         
         const {id} = req.params
 
@@ -31,6 +57,7 @@ module.exports = {
 
         const {id} = req.params
         const {name,price,description} = req.body
+
 
         const productsEdit = products.map(product => {
 
