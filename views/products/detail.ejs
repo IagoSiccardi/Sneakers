@@ -35,7 +35,12 @@
           <div class="d-flex flex-wrap justify-content-between mb-2">
 
             <a href="/products/edit/<%= product.id %> " class="text-black btn btn-outline-warning edit-delete "><button class=" btn text-dark">Editar</button></a>
-            <a href="/products/delete/<%= product.id %> " class="text-black btn btn-outline-danger edit-delete "><button class=" btn text-dark">Eliminar</button></a>
+
+            <form method="post" action="/products/delete/<%= product.id%>?_method=DELETE" class="edit-delete">
+              <a href="/products/delete/<%= product.id %> " class="text-black btn btn-outline-danger  col-12"><button type="submit" class=" btn text-dark">Eliminar</button></a>
+             
+            </form>
+
           </div>
           <button class="btn btn-outline-success w-100 mb-2 carrito">Agregar al carrito</button>
         </div>

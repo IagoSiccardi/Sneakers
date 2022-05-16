@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const {detail, products,search, edit, update, create, store} = require('../controllers/productsController')
+const {detail, products,search, edit, update, create, store, remove} = require('../controllers/productsController')
 
 
 router.get('/',products)
@@ -12,6 +12,8 @@ router.post('/create', store)
 
 router.get('/edit/:id', edit)
 router.put('/update/:id', update)
+
+router.delete('/delete/:id', remove)
 
 
 
