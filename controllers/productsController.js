@@ -29,7 +29,7 @@ module.exports = {
             id: +lastId,
             name: name.trim(),
             price: +price,
-            img: 'default-img.png',
+            img: req.file ? req.file.filename : 'default-img.png',
             description: description.trim()
             
         }
@@ -43,12 +43,21 @@ module.exports = {
 
     remove: (req,res) => {
 
-
+        
+        
+        
         const {id} = req.params
-         
+
+        const product = products.find(product => product.id === +id)
+        
         const productsEdit = products.filter(product => product.id !== +id)
 
+
         fs.writeFileSync(path.resolve(__dirname, '..', 'data', 'products.json'),JSON.stringify(productsEdit,null,3),'utf-8')
+
+        if(fs.existsSync(path.resolve(__dirname,'..', 'public', 'images', product.img)) && product.img !== 'default-img.png' ){
+            fs.unlinkSync(path.resolve(__dirname,'..', 'public', 'images', product.img))
+        }
 
 
         res.redirect('/products')
@@ -85,7 +94,13 @@ module.exports = {
                     ...product,
                     name: name.trim(),
                     price : +price,
+                    img: req.file ? req.file.filename : product.img,
                     description: description.trim()
+                }
+                if(req.file){
+                    if(fs.existsSync(path.resolve(__dirname,'..', 'public', 'images', product.img)) && product.img !== 'default-img.png' ){
+                        fs.unlinkSync(path.resolve(__dirname,'..', 'public', 'images', product.img))
+                    }
                 }
 
                 return productEdit
@@ -102,6 +117,8 @@ module.exports = {
 
 
     detail: (req,res) => {
+
+        const products =  JSON.parse(fs.readFileSync(path.resolve(__dirname, '..','data','products.json')))
 
         const {id} = req.params
 
